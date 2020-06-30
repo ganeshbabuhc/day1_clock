@@ -1,0 +1,58 @@
+h1, h2 {
+  font-family: Lato;
+}
+body {
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock-container .clock {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1e1e1e;
+  box-shadow: 0px 0px 2px 2px #535353, inset 0px 0px 2px 2px #3d3d3d, 0px 0px 2px 2px #535353, inset 0px 0px 2px 2px #3d3d3d;
+}
+.clock .hor, .clock .min, .clock .sec {
+  position: relative;
+}
+.clock .hor .hr {
+    background-color: blue;
+    position: absolute;
+    height: 45px;
+    width: 2px;
+    bottom: 0px;
+    z-index: 8;
+    border-radius: 2px;
+}
+
+.clock .min .mn {
+    background-color: white;
+    position: absolute;
+    height: 60px;
+    width: 2px;
+    bottom: 0px;
+    z-index: 9;
+     border-radius: 2px;
+}
+
+.clock .sec .sc {
+    background-color: red;
+    position: absolute;
+    height: 80px;
+    width: 2px;
+    bottom: -15px;
+    z-index: 10;
+    border-radius: 2px;
+
+}
